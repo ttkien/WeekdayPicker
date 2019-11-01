@@ -16,11 +16,11 @@ Pod::Spec.new do |s|
   s.platforms    = { :ios => "9.0", :tvos => "10.0" }
   s.source       = { :git => "https://github.com/ttkien/WeekdayPicker.git", :tag => "#{s.version}" }
 
-  s.source_files = "./**/*.{h,m,swift}"
+  s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
   s.dependency "React"
-	
+  s.dependency "WeekdayDatePicker"	
   # s.dependency "..."
 end
 

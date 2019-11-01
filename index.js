@@ -1,5 +1,3 @@
-import { NativeModules } from 'react-native';
-
-const { WeekdayPicker } = NativeModules;
+import WeekdayPicker from './picker';
 
 export default WeekdayPicker;
