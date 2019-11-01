@@ -5,7 +5,7 @@
 #import <React/UIView+React.h>
 @implementation RNWeekdayPickerManager
 
-RCT_EXPORT_MODULE()
+RCT_EXPORT_MODULE(RNWeekdayPicker)
 
 - (UIView *)view
 {

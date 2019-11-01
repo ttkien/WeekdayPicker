@@ -36,5 +36,5 @@ type NativeProps = $ReadOnly<{|
 type RCTDatePickerNativeType = Class<NativeComponent<NativeProps>>;
 
 export default ((requireNativeComponent(
-  'WeekdayPicker',
+  'RNWeekdayPicker',
 ): any): RCTDatePickerNativeType);
