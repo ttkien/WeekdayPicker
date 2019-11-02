@@ -1,6 +1,6 @@
-#import <React/RCTViewManager.h>
-
-@interface RNWeekdayPickerManager : RCTViewManager
-
-@end
-
+//#import <React/RCTViewManager.h>
+//
+//@interface RNWeekdayPickerManager : RCTViewManager
+//
+//@end
+//
