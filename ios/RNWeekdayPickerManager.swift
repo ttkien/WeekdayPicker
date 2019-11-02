@@ -17,6 +17,8 @@ import WeekdayPicker
 class RNWeekdayPickerManager: RCTViewManager {
     
     override func view() -> UIView {
-        return WeekdayPicker()
+        let weekdayPicker = WeekdayPicker()
+        weekdayPicker.backgroundColor = UIColor.yellow
+        return weekdayPicker
     }
 }
