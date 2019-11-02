@@ -1,15 +1,17 @@
 #import "RNWeekdayPickerManager.h"
-#import <WeekdayDatePicker/BoSWeekdayDatePicker.h>
+//#import <WeekdayDatePicker/BoSWeekdayDatePicker.h>
 #import <React/RCTBridge.h>
 #import <React/RCTEventDispatcher.h>
 #import <React/UIView+React.h>
+#import <WeekdayPicker/WeekdayPicker.h>
+
 @implementation RNWeekdayPickerManager
 
 RCT_EXPORT_MODULE(RNWeekdayPicker)
 
 - (UIView *)view
 {
-    return [BoSWeekdayDatePickerView new];
+    return [[WeekdayPicker alloc] init];
 }
 
 
