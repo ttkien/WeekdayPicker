@@ -1,11 +1,25 @@
-source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
-require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
+target 'Demo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
 
+  # Pods for Demo
 
+  target 'DemoTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
 
 target 'WeekdayPicker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for WeekdayPicker
+
   pod 'React', :path => '../node_modules/react-native/'
   pod 'React-Core', :path => '../node_modules/react-native/React'
   pod 'React-DevSupport', :path => '../node_modules/react-native/React'
@@ -29,10 +43,9 @@ target 'WeekdayPicker' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
-  use_native_modules!
+  target 'WeekdayPickerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
 
-  # Required by RNFirebase
-  
-  pod "WeekdayDatePicker"
 end
-

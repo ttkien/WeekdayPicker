@@ -23,15 +23,7 @@ type Event = SyntheticEvent<
 
 type NativeProps = $ReadOnly<{|
   ...ViewProps,
-  date?: ?number,
-  initialDate?: ?Date,
-  locale?: ?string,
-  maximumDate?: ?number,
-  minimumDate?: ?number,
-  minuteInterval?: ?(1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30),
-  mode?: ?('date' | 'time' | 'datetime'),
-  onChange?: ?(event: Event) => void,
-  timeZoneOffsetInMinutes?: ?number,
+  function setupMinDate(minDate: Date, maxDate: Date, initialSelectionDate: Date)
 |}>;
 type RCTDatePickerNativeType = Class<NativeComponent<NativeProps>>;
 
